@@ -27,7 +27,8 @@ const HOST = process.env.HOST || '127.0.0.1';
 const PUBLIC_URL = (process.env.PUBLIC_URL || '').replace(/\/+$/, '');
 const TRUST_PROXY = process.env.TRUST_PROXY === '1';
 const DATA_DIR = path.resolve(process.env.DATA_DIR || path.join(__dirname, 'donnees'));
-const IS_LOCAL = ['127.0.0.1', 'localhost', '::1'].includes(HOST);
+// Sur ce PC : écoute locale et pas d'adresse publique (derrière un proxy, HOST vaut aussi 127.0.0.1)
+const IS_LOCAL = !PUBLIC_URL && ['127.0.0.1', 'localhost', '::1'].includes(HOST);
 
 const API = 'https://api.higgsfield.ai';
 const API_TIMEOUT_MS = 30_000;
