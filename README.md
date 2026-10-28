@@ -12,6 +12,7 @@ le serveur, dans le dossier de son compte, et reste consultable dans la page.
 | `index.html` | L'application (interface)                                   |
 | `server.js`  | Mini-serveur relais entre la page et l'API (aucune dépendance) |
 | `README.md`  | Ce fichier                                                  |
+| `INSTALLATION.md` | Guide d'installation sur un VPS (Caddy, systemd, sauvegardes), pour l'administrateur système |
 | `donnees/`   | Créé au premier lancement : comptes, sessions, clé de chiffrement et fichiers de chaque utilisateur (voir « Comptes ») |
 
 ## 1. Installer Node.js
