@@ -1,0 +1,13 @@
+# Données des utilisateurs : comptes, sessions, clé de chiffrement des clés API,
+# images et vidéos générées. Ne jamais les versionner.
+donnees/
+bibliotheque/
+
+# Secrets et dépendances
+.env
+node_modules/
+
+# Hors application (retirer une ligne pour versionner le fichier)
+index.backup.html
+skills/
+*.pdf
